@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4b10d54812e2e2517dc481e9f8285da {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a4b10d54812e2e2517dc481e9f8285da" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a4b10d54812e2e2517dc481e9f8285da = L.map(
+                "map_a4b10d54812e2e2517dc481e9f8285da",
+                {
+                    center: [36.5, 127.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7dfdda28f484e0d874ad68d004e379d4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7dfdda28f484e0d874ad68d004e379d4.addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            var circle_marker_9d4fd72680c91ed9901ab4360f9ea4e4 = L.circleMarker(
+                [37.4980879456876, 126.867026290623],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.125, "stroke": true, "weight": 3}
+            ).addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            circle_marker_9d4fd72680c91ed9901ab4360f9ea4e4.bindTooltip(
+                `<div>
+                     고척: 승률 41.25%
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dfc3601cfc30ba14aa28b58f21b24b48 = L.circleMarker(
+                [35.1694249627668, 126.888805470329],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.875, "stroke": true, "weight": 3}
+            ).addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            circle_marker_dfc3601cfc30ba14aa28b58f21b24b48.bindTooltip(
+                `<div>
+                     광주: 승률 38.75%
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_75e9bf70d9b069a357a38ce9e4ddc342 = L.circleMarker(
+                [35.8411289243023, 128.681236372268],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.5, "stroke": true, "weight": 3}
+            ).addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            circle_marker_75e9bf70d9b069a357a38ce9e4ddc342.bindTooltip(
+                `<div>
+                     대구: 승률 45.00%
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ab0bb3f5d9aa853c4cb2608a4569cbc = L.circleMarker(
+                [36.3173370007388, 127.428013823451],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.5, "stroke": true, "weight": 3}
+            ).addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            circle_marker_7ab0bb3f5d9aa853c4cb2608a4569cbc.bindTooltip(
+                `<div>
+                     대전: 승률 45.00%
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8e2033e50a2e528eebb93e0ccb3e220b = L.circleMarker(
+                [37.436734, 126.690554],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.75, "stroke": true, "weight": 3}
+            ).addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            circle_marker_8e2033e50a2e528eebb93e0ccb3e220b.bindTooltip(
+                `<div>
+                     문학: 승률 37.50%
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_62cd06681b26f0853f911fb5c7d62cb8 = L.circleMarker(
+                [35.19403166, 129.06151836],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            circle_marker_62cd06681b26f0853f911fb5c7d62cb8.bindTooltip(
+                `<div>
+                     사직: 승률 0.00%
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9e75bb034b4a0ac9c039c51e797d7c0f = L.circleMarker(
+                [37.2978428909635, 127.011348102567],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.875, "stroke": true, "weight": 3}
+            ).addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            circle_marker_9e75bb034b4a0ac9c039c51e797d7c0f.bindTooltip(
+                `<div>
+                     수원: 승률 48.75%
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d7a76d6abd1ada47fb9408cee273787 = L.circleMarker(
+                [37.5112525852452, 127.072863377526],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 3}
+            ).addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            circle_marker_3d7a76d6abd1ada47fb9408cee273787.bindTooltip(
+                `<div>
+                     잠실: 승률 40.00%
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23d1fbe4972a7b3b9b442b75262d8529 = L.circleMarker(
+                [35.2219848625101, 128.579580117268],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.25, "stroke": true, "weight": 3}
+            ).addTo(map_a4b10d54812e2e2517dc481e9f8285da);
+        
+    
+            circle_marker_23d1fbe4972a7b3b9b442b75262d8529.bindTooltip(
+                `<div>
+                     창원: 승률 42.50%
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
